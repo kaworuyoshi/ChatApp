@@ -1,0 +1,20 @@
+{
+  "name": "ChatApp",
+  "authors": [
+    "miguelmaciel <iscmiguelmaciel@outlook.com>"
+  ],
+  "description": "Chat application using bower for front-end dependencies, gulp as a build system, node, express, jquery and bootstrap",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.1.1"
+  }
+}
