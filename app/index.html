@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Chat App</title>
+		<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+	<body>
+		<div class = 'container panel panel-default'>
+			<div class = 'row main'>
+				<h1 class = 'col-xs-12'>Chat Room</h1>
+				<div class = 'col-xs-12 col-md-3 users'>
+					<ul id = 'active-users'>
+					</ul>
+				</div>
+				<div class = 'col-xs-12 col-md-9'>
+					<ul id = 'msg-panel'>
+					</ul>
+					<form class="row">
+						<input type="text" name="msg" class = 'col-xs-9'>
+						<button action = 'submit' class = 'btn btn-primary col-xs-2'>Send</button>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<script type="text/javascript" src='bower_components/jquery/dist/jquery.js'></script>
+	</body>
+</html>

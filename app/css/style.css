@@ -1,0 +1,44 @@
+button{
+	margin-left: 15px;
+}
+input{
+	font-size: 18px;	
+}
+
+form.row{
+	margin-bottom: 20px;
+	margin-left: 0px;
+}
+
+ul{
+	list-style-type: none;
+	padding: 0;
+	margin-bottom: 30px;
+}
+
+li.msg{
+	padding: 8px;
+	margin-top: 30px;
+	font-size: 18px;
+	background-color: #BBB;
+	color: white;	
+	border-radius: 5px;
+}
+
+li.left{
+}
+
+li.right{
+}
+
+div.users{
+	font-size: 20px;
+}
+
+div.container{
+	margin-top: 20px;
+}
+
+div.main{
+	height: 600px;
+}
