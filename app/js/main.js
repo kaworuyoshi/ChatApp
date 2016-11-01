@@ -1,6 +1,5 @@
 var main = function(){
 
-
 	$('#js-form-msg').on('submit', function(event){
 		
 		//Preventing reload
@@ -14,6 +13,8 @@ var main = function(){
 
 		inputBox.val("");
 
+		socket.emit('client-msg', msg);
+
 
 	});
 
@@ -23,6 +24,16 @@ var main = function(){
 		li.addClass('msg');
 		$('#msg-panel').append(li);
 	}
+
+	//Connect to backend throug socket
+	var socket = io.connect('http://localhost:8080');
+
+	//Handle messages from backend
+	socket.on('msg', function(data){
+		console.log(data);
+		addMsg(data);
+	});
+
 }
 
 
