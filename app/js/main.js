@@ -1,5 +1,6 @@
 var main = function(){
 
+
 	$('#js-form-msg').on('submit', function(event){
 		
 		//Preventing reload
@@ -8,8 +9,6 @@ var main = function(){
 		//Getting Input box data
 		inputBox = $(event.target).find('#msg');
 		var msg = inputBox.val();
-
-		addMsg(msg);
 
 		inputBox.val("");
 
@@ -32,6 +31,11 @@ var main = function(){
 	socket.on('msg', function(data){
 		console.log(data);
 		addMsg(data);
+	});
+
+	socket.on('connect', function(data){
+		var userName = prompt('Enter your name');
+		socket.emit('join', userName);
 	});
 
 }
